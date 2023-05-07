@@ -10,75 +10,48 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <title>IceLand adventures - Pre-entrega-2</title>
+    <title>Nosotros|ICELAND adventures</title>
 </head>
 <body>
   <header>
-    <div class="background-nav--destinos">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid ancho-restringido">
-        <a class="typo-titulo--destinos" href="../index.html">ICE LAND</a>
-        <div>
-          <p class="typo-titulo2-destinos">adventures</p>
-        </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-        <span class="navbar-toggler-icon"></span>
+    <div class="nav-backgroundgr">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ancho-restringido">
+          <a class="navbar-brand typo-titulobl" href="../index.html"><img class="logo__img" src="../scss/recursos/IceLand_logo.png" alt=""></a> 
+          <a class="navbar-brand typo-subtitulo" >adventures</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link typo-navegable-destinos" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link typo-navegable-destinos" href="../sections/destinos.html">Destinos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link typo-navegable-destinos" href="../sections/promociones.html">Promociones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link typo-navegable-destinos" href="../sections/blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link typo-navegable-destinos" href="../sections/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link typo-navegable-destinos" href="../sections/contacto.html">Contacto</a>
-              </li>
-              <!-- Search button -->
-              <div class="container">
-                <input placeholder="Type to search..." required="" class="input" name="text" type="text">
-                <div class="icon">
-                    <svg viewBox="0 0 512 512" class="ionicon" xmlns="http://www.w3.org/2000/svg">
-                        <title>Search</title>
-                        <path stroke-width="32" stroke-miterlimit="10" stroke="currentColor" fill="none" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
-                        <path d="M338.29 338.29L448 448" stroke-width="32" stroke-miterlimit="10" stroke-linecap="round" stroke="currentColor" fill="none"></path>
-                    </svg>
-                </div>
-            </div>
-            <!-- Weather dropdown -->
-            <li class="nav-item dropdown typo-subtitulo-weather">
-                <a
-                class="nav-link dropdown-toggle typo-navegable" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <p class="typo-subtitulo-weather-destino">Weather <i class="uil uil-snowflake weather--icon"></i></p>
-                </a>
-                <ul class="dropdown-menu menu-destino">
-                    <li><a class="dropdown-item typo-navegable typo-subtitulo-destino" href="#">Buenos Aires</a></li>
-                    <li><a class="dropdown-item typo-navegable typo-subtitulo typo-subtitulo-destino" href="#">Tokio</a></li>
-                    <li><a class="dropdown-item typo-navegable typo-subtitulo typo-subtitulo-destino" href="#">Indonesia</a>
-                    <li><a class="dropdown-item typo-navegable typo-subtitulo typo-subtitulo-destino" href="#">Sydney</a>
-                    <li><a class="dropdown-item typo-navegable typo-subtitulo typo-subtitulo-destino" href="#">Ver más...</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav navbar__menu">
+            <li class="nav-item">
+              <a class="nav-link nav-textcolorbl" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-textcolorbl" href="../pages/destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-textcolorbl" href="../pages/promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-textcolorbl" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-textcolorbl" href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav-textcolorbl" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Weather<i class="uil uil-snowflake weather__icon"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Buenos Aires</a></li>
+                <li><a class="dropdown-item" href="#">Tokio</a></li>
+                <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                <li><a class="dropdown-item" href="#">Sydney</a></li>
+                <li><a class="dropdown-item" href="#">Ver más...</a></li>
+              </ul>
+            </li>
+          </ul>
           </div>
         </div>
       </nav>

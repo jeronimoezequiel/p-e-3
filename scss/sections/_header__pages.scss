@@ -3,8 +3,12 @@
     background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(233,233,233,1) 68%, rgba(255,255,255,1) 100%);
 }
 .ancho-restringido{
-    max-width: 850px;
-    
+    max-width: 750px;
+    .logo__img{
+        width: 34px;
+        height: 34px;
+        // margin-left: 100px;
+    }
     .typo-titulo{
         font-family: $typo-titulo;
         font-weight: 700;
@@ -19,11 +23,11 @@
     }
     .typo-subtitulo{
         font-family: $typo-titulo;
-        font-size: map-get($font-size, h4);
-        font-weight: 300;
+        font-size: map-get($font-size, h3);
+        font-weight: 400;
         color: orangered;
-        margin-left: -2.3%;
-        margin-top: 0.6%;
+        margin-left: -1.5%;
+        margin-top: -.2%;
         
     }
     .navbar-collapse{
