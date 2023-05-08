@@ -1,8 +1,16 @@
+/* ------------ media queries ------------*/
+@import './utilities/media-queries';
+
 /* ------------ utilities ------------*/
 @import './utilities/vars';
+
 @import './utilities/reset';
 
-/* ------------ pages ------------*/
-@import './sections/header';
+/* ------------ contenido gral ------------*/
+@import './sections/header-index';
 @import './sections/header__pages';
+@import './sections/main-index';
+
+
+
 

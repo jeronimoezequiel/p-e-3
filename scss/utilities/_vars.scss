@@ -7,13 +7,53 @@ $typo-titulo: 'Poppins', sans-serif;
 
 /* ------------ maps ------------*/
 //font-sizes
-$font-size:(h1: 2.8rem, h2: 1.8em, h3: .8rem ,h4: .65rem);
+$font-size:(h1: 3.5rem, h2: 1.9rem, hdescrip: 1.3rem, h3: .8rem ,h4: .65rem);
 
+//each
 @each $font, $value in $font-size {
     .font--#{$font} {
         font-size: $value;
     }
 }
 
-//colors
-$blue: #367372;
+//maps
+$redes: (
+    whatsapp: rgb(46, 87, 46),
+    instagram: #C13584,
+    facebook: #3b5998,
+    twitter: #00acee,
+    spotify: #81b71a
+);
+//map-get
+$colores--principales: (nav-menu: rgb(192, 192, 192),);
+$colores--secundarios: (
+    title-secondary: orangered,
+    subtitle-secondary: rgba(133, 133, 133, 1),
+    title-politic: rgba(128, 128, 128, 0.664),
+    grids-soporte: #d7d7d7,
+);
+
+//extend placeholder
+%h4 {
+    font-family: 'Poppins';
+    font-size: 1px;
+    color:  map-get($colores--secundarios, subtitle-secondary );
+    position: absolute;
+    font-size: 14px;
+    top: 51%;
+    left: 20.5%;
+};
+%input__wrapper-input{
+    position: absolute;
+        background-color: #eee;
+        margin-top: 21.5%;
+        margin-left: 20%;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 17rem;
+        border-radius: 1rem;
+        color: black;
+        box-shadow: 0 0.4rem #dfd9d9;
+        cursor: pointer;
+};

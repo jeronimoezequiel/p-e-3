@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/f39f83ef3f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./scss/recursos/IceLand_logo.png" type="image/x-icon">
     <title>Inicio|ICELAND adventures</title>
 </head>
-<body>
+  <body>
+<!------------ Header  ------------>
     <header>
       <div class="nav__backgroundbl">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid ancho-restringido">
             <a class="navbar-brand typo-titulo" href="./index.html">ICE LAND</a>
             <a class="navbar-brand typo-subtitulo">adventures</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler navdropdown__background" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon navdropdown__background"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav navbar__menu">
+  <!-- Navegador ppal (home, destinos, promociones, blog) -->
+            <div class="collapse navbar-collapse navbar__menu" id="navbarNavDropdown">
+              <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link nav-textcolor" aria-current="page" href="./index.html">Home</a>
                 </li>
@@ -52,23 +55,76 @@
                     <li><a class="dropdown-item" href="#">Sydney</a></li>
                     <li><a class="dropdown-item" href="#">Ver más...</a></li>
                   </ul>
+                  <li class="nav-item">
+                    <a class="nav-link nav-textcolor login-properties" href="./pages/login.html">LOGIN</a>
+                  </li>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-      </div>
-        
-      
-        
-        
+      </div>     
     </header>
 
-    <main></main>
+<!------------ main (secciones) ------------>
+    <main>
+  <!-- Seccion A (Menu principal)-->
+    <section>
+      <div class="section-a__background">
+          <div>
+            <h1 class="index__title">DESCUBRE</h1>
+            <h2 class="index__subtitle">nuevos destinos</h2>
+            <h3 class="index__buscador">Alojamientos</h3>
+          </div>
 
-    <footer></footer>
+  <!-- Buscadores (destino, fechas, cant. de hab.) -->
+          <h4 class="index__destfechas">DESTINO</h4>
+          <div class="input__wrapper">
+            <input type="text" placeholder="Ingrese un destino" name="text" class="input">
+          </div>
+          <h4 class="index__destfechas--2">FECHAS</h4>
+          <div class="input__wrapper--2">
+            <input type="text" placeholder="Ingrese fecha de entrada" name="text" class="input">
+          </div>
+          <h4 class="index__destfechas--3">Cant. Hab.</h4>
+          <div class="input__wrapper--3">
+            <input type="text" placeholder="Hab." name="text" class="input">
+          </div>
+
+  <!-- Redes Sociales (wpp, Ig, Fb, Wpp, Tw, Spotify) -->
+          <div class="media__icons">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-spotify"></i>
+          </div>
+      </div>
+    </section>
+
+  <!-- Seccion B (Explora Lugares) -->
+  <section>
+
+  </section>
+
+  <section></section>
+
+  <section></section>
+
+  <section></section>
+
+  <section></section>
+
+  <section></section>
+
+    </main>
+      
+
+    <footer>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>

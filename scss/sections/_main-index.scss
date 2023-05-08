@@ -1,0 +1,156 @@
+// --- main menu__index ---
+//------------------------   SECCION A   ------------------------
+.section-a__background{
+    background-color: black;
+    width: 100%;
+    height: 91vh;
+
+    .index__title{
+        display: flex;
+        font-family: $typo-titulo;
+        font-size: map-get($font-size, h1);
+        font-weight: 700;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 19%;
+        color: white;
+    }
+    .index__subtitle{
+        font-family: $typo-titulo;
+        font-size: map-get($font-size , h2);
+        font-weight: 200;
+        position: absolute;
+        top: 34.5%;
+        left: 41%;
+        color: whitesmoke;
+    }
+    .index__destfechas{
+        font-family: 'Poppins';
+        font-size: 1px;
+        color:  map-get($colores--secundarios, subtitle-secondary );
+        position: absolute;
+        font-size: 14px;
+        top: 51%;
+        left: 20.5%;
+    }
+//Buscador (destino, fechas, cant. de hab.)
+    .index__buscador{
+        font-family: $typo-titulo;
+        color: map-get($colores--secundarios, title-secondary );
+        position: absolute;
+        font-size: 21px;
+        top: 42%;
+        left: 19%;
+        right: 40px;
+        padding: 14px;
+        max-width: 800px;
+        height: 170px;
+        background:  rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        text-shadow: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .input__wrapper input {
+        position: absolute;
+        background-color: #eee;
+        margin-top: 21.5%;
+        margin-left: 20%;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 17rem;
+        border-radius: 1rem;
+        color: black;
+        box-shadow: 0 0.4rem #dfd9d9;
+        cursor: pointer;
+    }
+    .input__wrapper input:focus {
+        outline-color: map-get($colores--secundarios, title-secondary );
+    }
+    .index__destfechas--2{
+        @extend %h4;
+        left: 42%;
+    }
+    .input__wrapper--2 input{
+        @extend %input__wrapper-input;
+        margin-left: 41%;
+    }
+    .input__wrapper--2 input:focus {
+        outline-color: map-get($colores--secundarios, title-secondary );
+    }
+    .index__destfechas--3{
+        @extend %h4;
+        left: 62.5%;
+    }
+    .input__wrapper--3 input{
+        position: absolute;
+        background-color: #eee;
+        margin-top: 21.5%;
+        margin-left: 62%;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        width: 12rem;
+        border-radius: 1rem;
+        color: black;
+        box-shadow: 0 0.4rem #dfd9d9;
+        cursor: pointer;
+    }
+//Redes Sociales
+    .media__icons{
+        display: flex;
+        color: black;
+        position: absolute;
+        display: inline-flex;
+        flex-direction: column;
+        transform: translateY(70%);
+        margin-left: 100px;
+        gap: .7rem;
+        
+        @each $redsocial, $colordered in $redes {
+            .fa-#{$redsocial} {
+                background-color: $colordered;
+            }
+        }
+        .fa-whatsapp{
+            display: flex;
+            width: 35px;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background-color: map-get($colores--secundarios, grids-soporte);
+            &:hover {
+                background-color: map-get($redes, whatsapp);
+            }
+        }
+        .fa-instagram {
+            @extend .fa-whatsapp;
+            &:hover{
+                background-color: map-get($redes, instagram );
+            }
+        }
+        .fa-twitter {
+            @extend .fa-whatsapp;
+            &:hover{
+                background-color: map-get($redes, twitter );
+            }
+        }
+        .fa-facebook {
+            @extend .fa-whatsapp;
+            &:hover{
+                background-color: map-get($redes, facebook );
+            }
+        }
+        .fa-spotify {
+            @extend .fa-whatsapp;
+            &:hover{
+                background-color: map-get($redes, spotify );
+            }
+        }
+        
+        
+    }
+}

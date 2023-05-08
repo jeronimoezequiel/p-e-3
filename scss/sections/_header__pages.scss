@@ -3,7 +3,7 @@
     background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(233,233,233,1) 68%, rgba(255,255,255,1) 100%);
 }
 .ancho-restringido{
-    max-width: 750px;
+    max-width: 850px;
     .logo__img{
         width: 34px;
         height: 34px;
@@ -30,18 +30,24 @@
         margin-top: -.2%;
         
     }
+    .navdropdown__background{
+        background-color: white;
+    }
     .navbar-collapse{
         flex-direction: column;
         }
         .navbar__menu{
             font-family: $typo-titulo;
             font-size: map-get($font-size, h3);
-            margin-left: -24%;
+            margin-left: -10%;
         }
         .nav-textcolorbl{
             color: black;
         }
         .weather__icon{
             color: orangered;
+        }
+        .login-properties-grey{
+            margin-left: 250%;
         }
 }

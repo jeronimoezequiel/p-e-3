@@ -1,0 +1,42 @@
+.nav__backgroundbl{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 50%, rgba(0,0,0,1) 100%);
+    
+    .ancho-restringido{
+        max-width: 850px;
+        .typo-titulo{
+            font-family: $typo-titulo;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 3px;
+        }
+        .typo-subtitulo{
+            font-family: $typo-titulo;
+            font-size: map-get($font-size, h4);
+            font-weight: 300;
+            color: map-get($colores--secundarios, title-secondary);
+            margin-top: .2%;
+            margin-left: -1.8%;
+        }
+        .navbar-collapse{
+            flex-direction: column;
+            }
+            .navbar__menu{
+                font-family: $typo-titulo;
+                font-size: map-get($font-size, h3);
+                margin-left: -10%;
+            }
+            .nav-textcolor{
+                color: map-get($colores--principales, nav-menu );
+            }
+            .weather__icon{
+                color: map-get($colores--secundarios, title-secondary);
+            }
+            .login-properties{
+                margin-left: 200%;
+                color: map-get($colores--secundarios, title-politic);;
+            }
+    }
+}
+
+
