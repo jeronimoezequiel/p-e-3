@@ -4,7 +4,6 @@
     background-color: black;
     width: 100%;
     height: 91vh;
-
     .index__title{
         display: flex;
         font-family: $typo-titulo;
@@ -34,41 +33,41 @@
         left: 20.5%;
     }
 //Buscador (destino, fechas, cant. de hab.)
-    .index__buscador{
-        font-family: $typo-titulo;
-        color: map-get($colores--secundarios, title-secondary );
-        position: absolute;
-        font-size: 21px;
-        top: 42%;
-        left: 19%;
-        right: 40px;
-        padding: 14px;
-        max-width: 800px;
-        height: 170px;
-        background:  rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px);
-        text-shadow: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .input__wrapper input {
-        position: absolute;
-        background-color: #eee;
-        margin-top: 21.5%;
-        margin-left: 20%;
-        border: none;
-        padding: 1rem;
-        font-size: 1rem;
-        width: 17rem;
-        border-radius: 1rem;
-        color: black;
-        box-shadow: 0 0.4rem #dfd9d9;
-        cursor: pointer;
-    }
-    .input__wrapper input:focus {
-        outline-color: map-get($colores--secundarios, title-secondary );
-    }
+    // .index__buscador{
+    //     font-family: $typo-titulo;
+    //     color: map-get($colores--secundarios, title-secondary );
+    //     position: absolute;
+    //     font-size: 21px;
+    //     top: 42%;
+    //     left: 19%;
+    //     right: 40px;
+    //     padding: 14px;
+    //     max-width: 800px;
+    //     height: 170px;
+    //     background:  rgba(255, 255, 255, 0.1);
+    //     backdrop-filter: blur(5px);
+    //     text-shadow: rgba(255, 255, 255, 0.1);
+    //     border-radius: 10px;
+    //     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    //     border-right: 1px solid rgba(255, 255, 255, 0.1);
+    // }
+    // .input__wrapper input {
+    //     position: absolute;
+    //     background-color: #eee;
+    //     margin-top: 21.5%;
+    //     margin-left: 20%;
+    //     border: none;
+    //     padding: 1rem;
+    //     font-size: 1rem;
+    //     width: 17rem;
+    //     border-radius: 1rem;
+    //     color: black;
+    //     box-shadow: 0 0.4rem #dfd9d9;
+    //     cursor: pointer;
+    // }
+    // .input__wrapper input:focus {
+    //     outline-color: map-get($colores--secundarios, title-secondary );
+    // }
     .index__destfechas--2{
         @extend %h4;
         left: 42%;

@@ -7,7 +7,7 @@ $typo-titulo: 'Poppins', sans-serif;
 
 /* ------------ maps ------------*/
 //font-sizes
-$font-size:(h1: 3.5rem, h2: 1.9rem, hdescrip: 1.3rem, h3: .8rem ,h4: .65rem);
+$font-size:(h1: 3.5rem, h2: 1.9rem, hdescrip: 1.3rem, h3: .8rem ,h4: .65rem, terc: .45rem);
 
 //each
 @each $font, $value in $font-size {
@@ -34,6 +34,24 @@ $colores--secundarios: (
 );
 
 //extend placeholder
+%h2{
+    display: flex;
+    font-family: 'Poppins';
+    font-family: $typo-titulo;
+    font-size: map-get($font-size, h2);
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+%opciones{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin-left: -32px;
+    margin-top: -39px;
+}
 %h4 {
     font-family: 'Poppins';
     font-size: 1px;

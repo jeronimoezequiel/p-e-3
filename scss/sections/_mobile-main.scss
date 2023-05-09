@@ -1,0 +1,123 @@
+.explora__lugares{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    h2{
+        display: flex;
+        color: white;
+        font-family: $typo-titulo;
+        font-size: map-get($font-size, h2);
+        font-weight: 500;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+    }
+    .explora__lugares--opciones{
+        justify-content: center;
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+        margin-left: -32px;
+        margin-top: -39px;
+    }
+    .carousel__properties{
+        height: 300px;
+    }
+    .box{
+        width: 200px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        margin-left: 105px;
+    }
+    .capa{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transform: scale(0);
+        transition: .8s ease;
+    }
+    .box:hover .capa{
+        transform: scale(1);
+    }
+    
+}
+.destinos-destacados{
+    width: 100%;
+    height: 94vh;
+    background-color: green;
+    h2{
+        @extend %h2
+    };
+    .destinos-destacados--opciones{
+        @extend %opciones;
+    };
+}
+
+.recomendaciones{
+    width: 100%;
+    height: 148vh;
+    background-color: black;
+    padding: 10px;
+    h2{
+        @extend %h2;
+        color: white
+    };
+    .recomendaciones--opciones{
+        @extend %opciones;
+    }
+    h3{
+        text-align: center;
+        font-family: $typo-titulo;
+        color: map-get($colores--secundarios, title-secondary );
+    }
+    .recomendaciones__grid{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .recomendaciones__grid > div{
+        background-image: url(https://lh3.googleusercontent.com/vD190diwJdQCjOZrLLGShsLmSEVELrjWBfaAXgiDfIfJfROeZ-9vXCOC3eMH-tuAj0Pi5hczKw8WFyd81gxkejhjzV7zKWacc_7_OTS9);
+        background-size: cover;
+        height: 8rem;
+        padding: 1rem;
+        display: flex;
+        align-items: end;
+        position: relative;
+        isolation: isolate;
+    }
+    .recomendaciones__grid > div::before{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }
+    .recomendaciones__grid > div > h3{
+        color: white;
+        font-size: map-get($font-size , h3 );
+    }
+    .recomendaciones__grid > div:nth-child(1){
+        background-image: url(https://lh3.googleusercontent.com/_NV-yLyrv5iIyin57BQngYEVZTkkTuzHKEB6J1R5Exyw8BdnTMA93p5x46kdO2ONFUNguUEViP3O3IypZO4XzaAeMfz8Mp3FllXqhcs);
+    }
+    .recomendaciones__grid > div:nth-child(2){
+        background-image: url(https://lh3.googleusercontent.com/TfqG-pFMkdoXPRJ-G0DMjAW67gU45C9ZIhbJ0LMXgW7O6wqNBXQ7edkOT0yX3WGlnI3_q9_k2TwAQEDQ0Z_o33zoGy2UBO0jGwWcy9hfxg);
+    }
+    .recomendaciones__grid > div:nth-child(3){
+        background-image: url(https://lh3.googleusercontent.com/sq9sXUJnwLXyrk6PQiOBesp2DnohHbjU8rjPZoLLtHs38vHRWfMx9k6fogRh71RGMHdx5LC2x6gUZfdSqTpi1v49luljsip0k8ASLGvb);
+    }
+    .recomendaciones__grid > div:nth-child(4){
+        background-image: url(https://lh3.googleusercontent.com/O3mhq9kZ7jz1tA8YMax7v2Q_qWYVDtvVdQXTONd-oOXam1wIzFhgnn3wXWKZU3hplhxsRk1OKlSlgVYiKwwNpf75dvX7m5Gqnn1ljMBP);
+    }
+}
