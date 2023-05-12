@@ -695,7 +695,7 @@ a {
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .nav__backgroundbl {
     min-width: 320px; }
     .nav__backgroundbl .ancho-restringido .navbar__menu {
@@ -704,8 +704,8 @@ a {
     .nav__backgroundbl .ancho-restringido .nav-textcolor {
       margin-left: 10%; }
   .header__background {
-    min-width: 320px;
-    background-image: url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=600); }
+    min-width: 420px;
+    background-image: url(https://images.pexels.com/photos/16639623/pexels-photo-16639623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); }
     .header__background .titulo-1 {
       color: white;
       font-size: 40px;
@@ -715,8 +715,8 @@ a {
       font-size: 18px;
       display: flex;
       color: black;
-      margin-left: 40%;
-      margin-top: 40%; }
+      margin-left: 55%;
+      margin-top: 30%; }
     .header__background .parrafo {
       font-size: 18px;
       margin-left: 1%;
@@ -727,29 +727,28 @@ a {
       margin-left: 7%; }
     .header__background .parrafo--fechas {
       color: black;
-      margin-top: 25%;
+      margin-top: 18%;
       margin-left: -19%; }
     .header__background .parrafo-hab {
       color: black;
-      margin-top: 25%;
+      margin-top: 18%;
       margin-left: -6%; }
     .header__background .input-form {
-      min-width: 325px;
       margin-left: 5.5%; }
       .header__background .input-form .input-form-text {
-        min-width: 200px; }
+        min-width: 280px; }
       .header__background .input-form .textUser {
         display: none; }
     .header__background .input-form--fechas .input-form-text {
-      width: 80px;
-      margin-top: 90%;
-      margin-left: -85%; }
+      min-width: 100px;
+      margin-top: 36%;
+      margin-left: -42%; }
     .header__background .input-form--fechas .textUser {
       display: none; }
     .header__background .input-form-hab .input-form-text-hab {
-      width: 80px;
-      margin-top: 90%;
-      margin-left: -37%; }
+      min-width: 50px;
+      margin-top: 46%;
+      margin-left: -17%; }
     .header__background .input-form-hab .textUser-hab {
       display: none; }
   .explora__lugares {

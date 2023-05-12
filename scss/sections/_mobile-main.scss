@@ -543,7 +543,7 @@
     }
 }  
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .nav__backgroundbl{
         min-width: 320px;
         .ancho-restringido{
@@ -557,8 +557,9 @@
         }
     }
     .header__background{
-        min-width: 320px;
-        background-image: url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=600);
+        min-width: 420px;
+        background-image: url(https://images.pexels.com/photos/16639623/pexels-photo-16639623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        
         .titulo-1{
             color: white;
             font-size: 40px;
@@ -569,8 +570,8 @@
             font-size: 18px;
             display: flex;
             color: black;
-            margin-left: 40%;
-            margin-top: 40%;
+            margin-left: 55%;
+            margin-top: 30%;
         }
         .parrafo{
             font-size: 18px;
@@ -584,19 +585,18 @@
         }
         .parrafo--fechas{
             color: black;
-            margin-top: 25%;
+            margin-top: 18%;
             margin-left: -19%;
         }
         .parrafo-hab{
             color: black;
-            margin-top: 25%;
+            margin-top: 18%;
             margin-left: -6%;
         }
         .input-form{
-            min-width: 325px;
             margin-left: 5.5%;
             .input-form-text{
-                min-width: 200px;
+                min-width: 280px;
             }
             .textUser{
                 display: none;
@@ -604,9 +604,9 @@
         }
         .input-form--fechas{
             .input-form-text{
-                width: 80px;
-                margin-top: 90%;
-                margin-left: -85%;
+                min-width: 100px;
+                margin-top: 36%;
+                margin-left: -42%;
             }
             .textUser{
                 display: none;
@@ -614,9 +614,9 @@
         }
         .input-form-hab{
             .input-form-text-hab{
-                width: 80px;
-                margin-top: 90%;
-                margin-left: -37%;
+                min-width: 50px;
+                margin-top: 46%;
+                margin-left: -17%;
             }
             .textUser-hab{
                 display: none;
