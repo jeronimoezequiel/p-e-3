@@ -16,111 +16,37 @@ h4{
 a{
     text-decoration: none;
 }
-
-.hero{
-    background-image: url(https://images.unsplash.com/photo-1563656410378-e5c283afafbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2rem 1rem;
-    position: relative;
-    .header{
-        display: flex;
-        position: absolute;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-    }
-    .logo{
-        width: 2rem;
-    }
-    .mobile-menu{
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        position: fixed;
-        inset: 0;
-        padding: 2rem;
-    }
-    .mobile-menu__header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .mobile-menu__nav{
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-    }
-    .mobile-menu__nav ul{
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .mobile-menu__nav ul li a{
-        color: white;
-        font-size: map-get($font-size, hdescrip );
-    }
-    .open-menu, .close-menu{
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: map-get($font-size , hdescrip );
-        cursor: pointer;
-    }
-    .hero__content{
-        flex-grow: 1;
-        display: flex;
-        align-items: self-start;
-        h1{
-            color: white;
-            font-size: map-get($font-size, h2);
-            font-weight: 700;
-            margin-top: 80px;
-            letter-spacing: 2px;
-        }
-        p {
-            color: white;
-            font-size: map-get($font-size, hdescrip );
-            margin-top: 85px;
-        }
-        .hero__buscador{
-            font-family: $typo-titulo;
-            color: map-get($colores--secundarios, title-secondary );
-            position: absolute;
-            font-size: map-get($font-size, hdescrip );
-            top: 28%;
-            padding: 8px;
-            min-width: 350px;
-            height: 170px;
-            background:  rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-            text-shadow: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            border-right: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .hero__buscador--h4{
-            font-size: map-get($font-size, h3);
-            position: relative;
-            margin-left: -86%;
-            display: flex;
-            font-size: 0.8rem;
-            margin-top: 42%;
-        }
-        .hero-wrapper{
-            position: relative;
-            margin-left: -14%;
-            display: grid;
-            align-items: center;
-            align-content: space-between;
-            margin-top: 47%;
-        }
-    } 
-    .disabled{
-        display: none;
-    }
+.nav__backgroundbl{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 50%, rgba(0,0,0,1) 100%);
+    .ancho-restringido{
+        max-width: 850px;
+        height: 45px;
+        .navbar-collapse{
+            flex-direction: column;
+            }
+            .navbar__menu{
+                font-family: $typo-titulo;
+                font-size: map-get($font-size, h4);
+                margin-left: -10%;
+            }
+            .nav-textcolor{
+                color: map-get($colores--principales, nav-menu );
+            }
+            .weather__icon{
+                color: map-get($colores--secundarios, title-secondary);
+            }
+            .login-properties{
+                margin-left: 200%;
+                color: map-get($colores--secundarios, title-politic);;
+            }
+    }        
 }
+
+
+
+
+
+
+
 

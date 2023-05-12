@@ -1,7 +1,222 @@
+//Inicio - buscador
+.header__background{
+    background-image: url(https://media.istockphoto.com/id/477946394/es/foto/llao-llao.jpg?b=1&s=612x612&w=0&k=20&c=h-6D28N8B0gKHbggppiFKxtoftQtLjfTM0ZRWkOe1zI=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    .titulo-1{
+        font-family: $typo-titulo;
+        font-size: map-get($font-size, h1 );
+        font-weight: 700;
+        position: absolute;
+        top: 32%;
+        left: 10%;
+        color: white;
+        min-height: 420px;        
+    }
+    .subtitle{
+        font-family: $typo-titulo;
+        font-size: 20px;
+        font-weight: 300;
+        min-height: 420px;
+        position: absolute;
+        top: 36.7%;
+        left: 30%;
+        color: whitesmoke;
+    }
+    .parrafo{
+        font-family: 'Poppins';
+        position: absolute;
+        font-size: 21px;
+        top: 42%;
+        left: 10.1%;
+        right: 40px;
+        max-width: 1180px;
+        height: 180px;
+        color: orangered;
+        background:  rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        text-shadow: rgba(255, 255, 255, 0.1);
+        padding: 14px;
+        border-radius: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .parrafo--destino{
+        font-family: 'Poppins';
+        font-size: 1px;
+        color:  rgba(133, 133, 133, 1);
+        position: absolute;
+        font-size: 14px;
+        top: 51%;
+        left: 12%;
+    }
+    .input-form {
+        position: absolute;
+        top: 56%;
+        left: 12%;
+        .input-form-text {
+            border: solid 1.9px #000;
+            width: 165%;
+            height: 45px;
+            border-radius: .7rem;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #000000;
+            transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+        .textUser {
+            position: absolute;
+            left: 15px;
+            top: -16%;
+            color:  rgba(133, 133, 133, 0.4);
+            font-family: 'Poppins';
+            font-weight: 500;
+            pointer-events: none;
+            transform: translateY(1rem);
+            transition: 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+        .input-form-text:focus, .input-form-text:valid {
+            outline: none;
+            box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+            background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+            transition: background 1.5s ease-in-out;
+        }
+        .input-form-text:focus ~ label, input-form-text:valid ~ label {
+            transform: translateY(-95%) scale(0.9);
+            padding: 0 .2em;
+            color: #000000be;
+            left: 80px;
+        }
+        .input-form-text:hover {
+            border: solid 1.9px #000002;
+            transform: scale(1.03);
+            box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+            transition: border-color 1s ease-in-out;
+            }
+    }
+    .parrafo--fechas{
+        font-family: 'Poppins';
+        font-size: 1px;
+        color:  rgba(160, 160, 160, 20);
+        position: absolute;
+        font-size: 14px;
+        top: 51%;
+        left: 38%;
+    }
+    .input-form--fechas{
+        position: absolute;
+        top: 56%;
+        left: 38%;
+        .input-form-text {
+            border: solid 1.9px #000;
+            width: 80%;
+            height: 45px;
+            border-radius: .7rem;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #000000;
+            transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+        .textUser {
+            position: absolute;
+            left: 15px;
+            top: -16%;
+            color:  rgba(133, 133, 133, 0.4);
+            font-family: 'Poppins';
+            font-weight: 500;
+            pointer-events: none;
+            transform: translateY(1rem);
+            transition: 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+        .input-form-text:focus, .input-form-text:valid {
+            outline: none;
+            box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+            background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+            transition: background 1.5s ease-in-out;
+        }
+        .input-form-text:focus ~ label, .input-form-text:valid ~ label {
+            transform: translateY(-95%) scale(0.9);
+            padding: 0 .2em;
+            color: #000000be;
+            left: 80px;
+        }
+        .input-form-text:hover {
+            border: solid 1.9px #000002;
+            transform: scale(1.03);
+            box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+            transition: border-color 1s ease-in-out;
+        }
+    }
+    .parrafo-hab{
+        font-family: 'Poppins';
+        font-size: 1px;
+        color:  rgba(200, 200, 200, 30);
+        position: absolute;
+        font-size: 14px;
+        top: 51%;
+        left: 63.5%;
+    }
+    .input-form-hab{
+        font-family: 'Poppins';
+        font-size: 1px;
+        color:  rgba(133, 133, 133, 1);
+        position: absolute;
+        font-size: 14px;
+        top: 56%;
+        left: 63.5%;
+        .input-form-text-hab {
+            border: solid 1.9px #000;
+            width: 80%;
+            height: 45px;
+            border-radius: .7rem;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #000000;
+            transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+        .textUser-hab {
+            position: absolute;
+            left: 15px;
+            top: -16%;
+            color:  rgba(133, 133, 133, 0.4);
+            font-family: 'Poppins';
+            font-weight: 500;
+            pointer-events: none;
+            transform: translateY(1rem);
+            transition: 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+        .input-form-text-hab:focus, .input-form-text:valid {
+            outline: none;
+            box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+            background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+            transition: background 1.5s ease-in-out;
+        }
+        .input-form-text-hab:focus ~ label, .input-form-text:valid ~ label {
+            transform: translateY(-65%) scale(0.9);
+            padding: 0 .2em;
+            color: #000000be;
+            left: 80px;
+        }
+        .input-form-text-hab:hover {
+            border: solid 1.9px #000002;
+            transform: scale(1.03);
+            box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+            transition: border-color 1s ease-in-out;
+        }
+    }
+}
+
+//Explora Lugares
 .explora__lugares{
     background-color: black;
     width: 100%;
-    height: 100vh;
+    height: 94vh;
+    align-items: center;
     h2{
         display: flex;
         color: white;
@@ -18,58 +233,129 @@
         list-style: none;
         gap: 1.5rem;
         margin-left: -32px;
-        margin-top: -39px;
+        margin-top: -2%;
     }
-    .carousel__properties{
-        height: 300px;
-    }
-    .box{
-        width: 200px;
-        height: 300px;
-        position: relative;
-        overflow: hidden;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-        background-position: center;
-        margin-left: 105px;
-    }
-    .capa{
+    .container-box{
         position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
-        transform: scale(0);
-        transition: .8s ease;
+        padding: 10px;
+        gap: 1rem;
+        .box{
+            width: 200px;
+            height: 300px;
+            position: relative;
+            margin-top: -18%;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        .capa{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transform: scale(0); 
+            transition: .8s ease;
+            .capa__texto{
+                font-family: $typo-titulo;
+                font-size: 20px;
+                color: white;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .box:hover .capa{
+            transform: scale(1);
+        }
     }
-    .box:hover .capa{
-        transform: scale(1);
-    }
+
     
 }
-.destinos-destacados{
+
+//Destinos Destacados
+.recomendaciones-2{
     width: 100%;
-    height: 94vh;
-    background-color: green;
+    height: 107vh;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
     h2{
-        @extend %h2
+        @extend %h2;
+        color: black;
     };
-    .destinos-destacados--opciones{
+    .recomendaciones--opciones-2{
         @extend %opciones;
-    };
+    }
+    h3{
+        text-align: center;
+        font-family: $typo-titulo;
+        color: map-get($colores--secundarios, title-secondary );
+    }
+    .recomendaciones__grid-2{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        
+    }
+    .recomendaciones__grid-2 > div{
+        background-image: url(https://images.unsplash.com/photo-1627156863760-f49b81d8ab77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+        background-size: cover;
+        height: 8rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        isolation: isolate;
+    }
+    .recomendaciones__grid-2 > div::before{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }
+    .recomendaciones__grid-2 > div > h3{
+        color: black;
+        font-size: map-get($font-size , h3 );
+    }
+    .recomendaciones__grid-2 > div:nth-child(1){
+        background-image: url(https://images.unsplash.com/photo-1627156863760-f49b81d8ab77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+    }
+    .recomendaciones__grid-2 > div:nth-child(2){
+        background-image: url(https://images.unsplash.com/photo-1627156863760-f49b81d8ab77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+    }
+    .recomendaciones__grid-2 > div:nth-child(3){
+        background-image: url(https://images.unsplash.com/photo-1545167496-31b3aa75296c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    }
+    .recomendaciones__grid-2 > div:nth-child(4){
+        background-image: url(https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80);
+    }
 }
 
+//Recomendaciones
 .recomendaciones{
     width: 100%;
-    height: 148vh;
+    height: 106vh;
     background-color: black;
     padding: 10px;
+    align-items: center;
     h2{
         @extend %h2;
         color: white
@@ -86,6 +372,7 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        width: 100%;
     }
     .recomendaciones__grid > div{
         background-image: url(https://lh3.googleusercontent.com/vD190diwJdQCjOZrLLGShsLmSEVELrjWBfaAXgiDfIfJfROeZ-9vXCOC3eMH-tuAj0Pi5hczKw8WFyd81gxkejhjzV7zKWacc_7_OTS9);
@@ -121,3 +408,136 @@
         background-image: url(https://lh3.googleusercontent.com/O3mhq9kZ7jz1tA8YMax7v2Q_qWYVDtvVdQXTONd-oOXam1wIzFhgnn3wXWKZU3hplhxsRk1OKlSlgVYiKwwNpf75dvX7m5Gqnn1ljMBP);
     }
 }
+
+//Footer
+.footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+    .logo{
+        margin-left: 2.5%;
+        margin-bottom: 2%;
+    }
+    .icons-copyright{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .footer-menu ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+    }
+    .footer-menu ul li a{
+        font-family: $typo-titulo;
+        color: black;
+        font-size: map-get($font-size, h3);
+    }
+    .icons{
+        display: flex;
+        gap: 1rem;
+        font-size: map-get($font-size, hdescrip );
+    }
+    .copyright{
+        color: map-get($colores--secundarios, subtitle-secondary );
+        font-size: map-get($font-size, h3 );
+    }
+}
+
+
+@media screen and(max-width: 820px) {
+    .nav__backgroundbl{
+        .ancho-restringido{
+            .navbar__menu{
+                background: rgb(0,0,0);
+                background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 50%, rgba(0,0,0,1) 100%);
+                margin-top: 1.75%;
+            }
+            .nav-textcolor{
+                margin-left: 10%;
+            }
+        }
+    }
+    .header__background{
+        max-width: 820px;
+        max-height: 20vh;
+        background-image: url(https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        .titulo-1{
+            color: black;
+            font-size: 46px;
+        }
+        .subtitle{
+            display: flex;
+            color: black;
+            margin-left: 11%;
+        }
+        .parrafo--destino, .parrafo--fechas, .parrafo-hab{
+            color: black;
+        }
+        .input-form{
+            .input-form-text{
+                max-width: 200px;
+            }
+            .textUser{
+                display: none;
+            }
+        }
+        .input-form--fechas{
+            .input-form-text{
+                max-width: 200px;
+            }
+            .textUser{
+                display: none;
+            }
+        }
+        .input-form-hab{
+            .input-form-text-hab{
+                max-width: 200px;
+            }
+            .textUser-hab{
+                display: none;
+            }
+        }
+    }
+}  
+        
+//         .input-form--fechas{
+//             .input-form-text{
+//                 max-width: 100px;
+//             }
+//         }
+//         .input-form-hab{
+//             .input-form-text-hab{
+//                     max-width: 100px;
+//                 }
+//             }
+//     }
+// }
+//     .explora__lugares{
+//     background-color: red;
+//     .container-box{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         .box{
+//             display: flex;
+//             height: 50px;
+//             position: relative;
+//             }
+//             .box img{
+//                 max-width: 500px;
+//             }
+//             .capa{
+//                 .capa__texto{
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+//     }
